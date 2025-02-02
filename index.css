@@ -10,4 +10,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1B244A;
+}
+
+.teams-container{
+    margin: 30px;
+}
+
+p{
+    color: red;
 }
