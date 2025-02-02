@@ -17,7 +17,8 @@ body {
     margin: 40px;
     display: grid;
     place-items: center;
-    height: 100vh;
+    width: auto;
+    
 }
 
 h1 {
@@ -28,13 +29,15 @@ h1 {
 
 p{
     color: #F94F6D;
-    width: 155px;
+    width: 160px;
     height: 120px;
     background-color: black;
     text-align: center;
     font-family: 'Cursed Timer ULiL', sans-serif;
     font-size: 90px;
-    padding-top: 30px;
+    padding-top: 35px;
+    border-radius: 5px;
+    margin: 0;
 }
 
 button {
@@ -46,4 +49,19 @@ button {
     border: 2px solid #9AABD8;
     border-radius: 5px;
     background-color: #1B244A;
+    margin-top: 40px;
+}
+button:hover {
+    border-color: greenyellow;
+}
+
+.new-game-btn {
+    color: greenyellow;
+    border-color: greenyellow;
+    width: 150px;
+    background-color: black;
+}
+
+.new-game-btn:hover {
+    border-color: #F94F6D;
 }

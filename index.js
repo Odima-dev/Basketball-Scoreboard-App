@@ -1,38 +1,51 @@
 
-let score = 0
+let scoreHome = 0;
+let scoreGuest = 0;
+
 //creating functions for adding points
 function homeOne() {
-    score += 1;
-    document.getElementById("home").textContent = score;
+    scoreHome += 1;
+    document.getElementById("home").textContent = scoreHome;
+    document.getElementById("home").style.color ="#ADFF2F"
 }
 
 function homeTwo() {
-    score += 2;
-    document.getElementById("home").textContent = score;
+    scoreHome += 2;
+    document.getElementById("home").textContent = scoreHome;
+    document.getElementById("home").style.color ="#ADFF2F"
 }
 
 function homeThree() {
-    score += 3;
-    document.getElementById("home").textContent = score;
+    scoreHome += 3;
+    document.getElementById("home").textContent = scoreHome;
+    document.getElementById("home").style.color ="#ADFF2F"
 }
 
+
 function guestOne() {
-    score += 1;
-    document.getElementById("guest").textContent = score;
+    scoreGuest += 1;
+    document.getElementById("guest").textContent = scoreGuest;
+    document.getElementById("guest").style.color ="#ADFF2F"
 }
 
 function guestTwo() {
-    score += 2;
-    document.getElementById("guest").textContent = score;
+    scoreGuest += 2;
+    document.getElementById("guest").textContent = scoreGuest;
+    document.getElementById("guest").style.color ="#ADFF2F"
 }
 
 function guestThree() {
-    score += 3;
-    document.getElementById("guest").textContent = score;
+    scoreGuest += 3;
+    document.getElementById("guest").textContent = scoreGuest;
+    document.getElementById("guest").style.color ="#ADFF2F"
 }
 
 //functiin for starting a new game
 function newGame() {
+    scoreHome = 0;
+    scoreGuest = 0;
     document.getElementById("home").textContent=0;
     document.getElementById("guest").textContent=0;
+    document.getElementById("home").style.color ="#F94F6D"
+    document.getElementById("guest").style.color ="#F94F6D"
 }
