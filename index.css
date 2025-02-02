@@ -6,8 +6,8 @@
 
 body {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -20,6 +20,8 @@ body {
     justify-content: center;
     background-color: #1B244A;
     width: auto;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .teams-container{
@@ -27,7 +29,7 @@ body {
     display: grid;
     place-items: center;
     width: auto;
-    
+    min-width: 160px;
 }
 
 h1 {
@@ -80,20 +82,32 @@ button:hover {
 
 /* Responsive Design for Mobile */
 @media (max-width: 600px) {
+    .teams-container {
+        margin: 20px 10px; /* Reduce margins */
+    }
+    
     .teams-container h1 {
         font-size: 1.5rem;
     }
-
+    
     .teams-container p {
-        font-size: 2rem;
+        width: 120px; /* Reduce score display width */
+        height: 90px; /* Reduce score display height */
+        font-size: 3rem; /* Adjust font size */
+        padding: 15px;
     }
-
+    
     button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
+        width: 35px; /* Make buttons smaller */
+        height: 35px;
+        font-size: 14px;
+        margin: 5px;
     }
-
-    .container {
-        padding: 10px; /* Reduce padding on smaller screens */
+    
+    .new-game-btn {
+        width: 120px;
+        height: auto;
+        padding: 10px;
+        margin: 10px 0;
     }
 }
