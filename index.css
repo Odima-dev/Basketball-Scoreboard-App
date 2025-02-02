@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #1B244A;
+    width: auto;
 }
 
 .teams-container{
